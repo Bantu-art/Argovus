@@ -42,7 +42,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',  # Custom app for parent accounts
 ]
+
+# Custom user model for authentication
+AUTH_USER_MODEL = 'accounts.Parent' 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
